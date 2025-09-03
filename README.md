@@ -62,29 +62,29 @@ The aim of this project is to develop a **website** (with potential mobile app e
 
 ## 📂 Project Structure Overview
 
-app/ # Laravel backend logic
+- app/ # Laravel backend logic
 
-bootstrap/
+- bootstrap/
 
-config/
+- config/
 
-database/
+- database/
 
-public/ # CSS, JS, and Blade assets
+- public/ # CSS, JS, and Blade assets
 
-resources/ # Blade templates, views, and frontend assets
+- resources/ # Blade templates, views, and frontend assets
 
-routes/ # Web and API routes
+- routes/ # Web and API routes
 
-storage/ # File storage (ignored in Git)
+- storage/ # File storage (ignored in Git)
 
-tests/
+- tests/
 
-.env.example
+- .env.example
 
-.gitignore
+- .gitignore
 
-composer.json
+- composer.json
 
 
 ---
@@ -114,54 +114,50 @@ composer.json
 
 ## 🛠 Setup Instructions
 
-1. Clone the repository:
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/your-username/pricefinder.git
+    cd pricefinder
+      
+2.  **Install PHP dependencies:**
+    composer install
 
-```bash
-git clone https://github.com/MahmoudSfn123/pricefinder.git
-cd pricefinder
+3.  **Install Node dependencies (if required):**
+    npm install
+    npm run dev
 
-Install PHP dependencies:
-composer install
+4.  **Configure environement variables:**
+    cp .env.example .env
+    php artisan key:generate
 
-Install Node dependencies (if required):
-npm install
-npm run dev
+5.  **Run database migrations:**
+    php artisan migrate
 
-Configure environment variables:
-cp .env.example .env
-php artisan key:generate
+6.  **Serve the application locally:**
+    php artisan serve
 
-Run database migrations:
-php artisan migrate
 
-Serve the application locally:
-php artisan serve
+## 🔐 Security Notes
 
-##############################################
+- .env contains sensitive configuration and is excluded from Git.
 
-🔐 Security Notes
+- Large folders like /vendor and /node_modules are ignored and installed locally.
 
-.env contains sensitive configuration and is excluded from Git.
+- Uploaded files are validated to prevent security risks.
 
-Large folders like /vendor and /node_modules are ignored and installed locally.
+## 📈 Expected Outcomes
 
-Uploaded files are validated to prevent security risks.
+- Fully functional web application for price comparison.
 
-📈 Expected Outcomes
+- Verified prices contributed by the user community.
 
-Fully functional web application for price comparison.
+- Users can make informed shopping decisions.
 
-Verified prices contributed by the user community.
+- Scalable structure for future mobile app integration.
 
-Users can make informed shopping decisions.
+## 👨‍💻 Author
 
-Scalable structure for future mobile app integration.
-
-👨‍💻 Author
-
-Mahmoud Saifan
+**Mahmoud Saifan**
 Graduate in Computer and Communication Network Engineering – Lebanese University
 Continuing software engineering studies at CNAM
-Contact: www.linkedin.com/in/mahmoud-saifan
- | Mahmoud.Saifan@hotmail.com
-
+Contact: www.linkedin/in/mahmoud-saifan | Mahmoud.Saifan@hotmail.com
