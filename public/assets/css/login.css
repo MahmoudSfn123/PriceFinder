@@ -1,0 +1,217 @@
+
+    .body{
+        padding: 3rem 0;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 400px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 20px;
+        position: relative;
+        margin:auto;
+        margin-top:50px;
+      }
+
+      .title {
+        font-size: 28px;
+        color: #F28123;
+        font-weight: 600;
+        letter-spacing: -1px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding-left: 30px;
+      }
+
+      .title::before,.title::after {
+        position: absolute;
+        content: "";
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        left: 0px;
+        background-color:#F28123;
+      }
+
+      .title::before {
+        width: 18px;
+        height: 18px;
+        background-color:#F28123;
+      }
+
+      .title::after {
+        width: 18px;
+        height: 18px;
+        animation: pulse 1s linear infinite;
+      }
+
+      .message, .signin {
+        color: #051922;
+        font-size: 14px;
+      }
+
+      .bg-red-100{
+        padding-left: 1rem; /* px-4 */
+        padding-right: 1rem; /* px-4 */
+        padding-top: 0.5rem; /* py-2 */
+        padding-bottom: 0.5rem; /* py-2 */
+        background-color: #fee2e2
+      }
+
+      .bg-green-100{
+        padding-left: 1rem; /* px-4 */
+        padding-right: 1rem; /* px-4 */
+        padding-top: 0.5rem; /* py-2 */
+        padding-bottom: 0.5rem; /* py-2 */
+        background-color: #dcfce7;
+      }
+      .my-2-text-red-500{
+        margin-top: 0.5rem; /* my-2 */
+        margin-bottom: 0.5rem; /* my-2 */
+        color: #f87171;
+      }
+
+      .my-2-text-green-500{
+        margin-top: 0.5rem; /* my-2 */
+        margin-bottom: 0.5rem; /* my-2 */
+        color: #22c55e;
+      }
+
+      .signin {
+        text-align: center;
+      }
+
+      .signin a {
+        color:#F28123;
+      }
+
+      .signin a:hover {
+        text-decoration: underline#F28123;
+      }
+      .signin1{
+        text-align:right;
+
+      }
+      .signin1 a {
+        color:#F28123;
+      }
+      .signin1 a:hover{
+        text-decoration: underline #F28123;
+      }
+
+      .flex {
+        display: flex;
+        width: 100%;
+        gap: 6px;
+      }
+
+      .flex-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        justify-content: space-between;
+      }
+
+      .flex-row > div > label {
+        font-size: 14px;
+        color: #051922;
+        font-weight: 400;
+      }
+
+      .form label {
+        position: relative;
+      }
+
+      .form label .input {
+        width: 100%;
+        padding: 10px 10px 20px 10px;
+        outline: 0;
+        border: 1px solid rgba(105, 105, 105, 0.397);
+        border-radius: 10px;
+      }
+
+      .form label .input + span {
+        position: absolute;
+        left: 10px;
+        top: 15px;
+        color: #051922;
+        font-size: 0.9em;
+        cursor: text;
+        transition: 0.3s ease;
+      }
+
+      .form label .input:placeholder-shown + span {
+        top: 15px;
+        font-size: 0.9em;
+      }
+
+      .form label .input:focus + span,.form label .input:valid + span {
+        top: 30px;
+        font-size: 0.7em;
+        font-weight: 600;
+      }
+
+      .form label .input:valid + span {
+        color: #F28123;
+      }
+
+      .submit {
+        border: none;
+        outline: none;
+        background-color:#F28123;
+        padding: 10px;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 16px;
+        transform: .3s ease;
+      }
+
+      .submit:hover {
+        background-color:#051922;
+        color:#F28123;
+        border-color: #051922;
+      }
+
+      .container{
+        display:flex;
+      }
+
+      .btn {
+        margin-top: 10px;
+        width: 50%;
+        height: 50px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        gap: 10px;
+        border: 1px solid #ededef;
+        background-color: white;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+      }
+
+      .p {
+        text-align: center;
+        color: #051922;
+        font-size: 14px;
+        margin: 5px 0;
+      }
+
+      @keyframes pulse {
+        from {
+          transform: scale(0.9);
+          opacity: 1;
+        }
+
+        to {
+          transform: scale(1.8);
+          opacity: 0;
+        }
+      }

@@ -1,0 +1,114 @@
+.admin-sidebar {
+    width: 16rem;
+    height: 100vh;
+    background-color: #3d0e03; /* dark brown */
+    color: #f3f4f6;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.sidebar-header {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #5a1b0a;
+}
+
+.brand-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f97316; /* orange */
+}
+.half-brand-name{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f3f4f6;
+}
+
+.sidebar-nav {
+    flex: 1;
+    padding: 1rem;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    color: #f3f4f6;
+    text-decoration: none;
+    border-radius: 0.75rem;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    background-color: #5a1b0a; /* lighter brown on hover */
+    color: #ffffff;
+}
+
+.nav-link.active {
+    background-color: #a53f13; /* strong orange-brown */
+    color: #ffffff;
+}
+
+.nav-icon {
+    font-size: 1.25rem;
+    width: 1.25rem;
+    flex-shrink: 0;
+}
+
+.nav-text {
+    font-size: 0.875rem;
+}
+
+.sidebar-footer {
+    padding: 1rem;
+    border-top: 1px solid #5a1b0a;
+    display: felx;
+}
+
+.back-to-site {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: none;
+    background-color: transparent;
+    padding: 0.75rem;
+    color: #f3f4f6;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease;
+    font-size: 0.875rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+.back-to-site:hover {
+    background-color: #5a1b0a;
+    color: white;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .admin-sidebar {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        z-index: 1000;
+    }
+
+    .admin-sidebar.mobile-open {
+        transform: translateX(0);
+    }
+}

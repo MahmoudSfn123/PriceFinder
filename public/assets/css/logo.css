@@ -1,0 +1,95 @@
+.button {
+    margin:0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    float:left;
+  }
+
+  .button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color: #F28123;
+    --fs-size: 2em;
+    margin-top:5px !important;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+
+  .home-header  .button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --fs-size: 2em;
+     margin-top:5px !important;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+
+.sticky-wrapper.is-sticky .button {
+  --animation-color: #F28123; /* ← After scroll */
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --fs-size: 2em;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+
+.sticky-wrapper.is-sticky .hover-text {
+  color: var(--animation-color);
+  border-right: var(--border-right) solid var(--animation-color);
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+
+.sticky-wrapper.is-sticky .button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color));
+}
+
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+
+  .home-header .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: #051922;
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid #051922;
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px #051922;
+  }
+
+
+  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+.home-header  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px #051922)
+  }
