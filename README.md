@@ -44,6 +44,16 @@ The aim of this project is to develop a **website** (with potential mobile app e
 7. **Community Engagement**  
    - Users can share shopping tips, deals, and experiences via a forum or discussion board.
 
+8. **Admin Dashboard**  
+   - Full access to manage the platform, including:
+     - **Users:** View, edit, or deactivate user accounts.
+     - **Products:** Approve or reject products submitted by users.
+     - **Categories:** Add, edit, or delete categories.
+     - **Discussions:** Moderate community discussions and posts.
+     - **Ratings & Likes:** Monitor and manage reviews, ratings, and likes.
+   - Authentication system ensures that only authorized admins can access the dashboard.
+   - Centralized control to maintain platform quality and reliability.
+
 ---
 
 ## 🔧 Technology Stack
@@ -63,29 +73,17 @@ The aim of this project is to develop a **website** (with potential mobile app e
 ## 📂 Project Structure Overview
 
 - app/ # Laravel backend logic
-
 - bootstrap/
-
 - config/
-
 - database/
-
 - public/ # CSS, JS, and Blade assets
-
 - resources/ # Blade templates, views, and frontend assets
-
 - routes/ # Web and API routes
-
 - storage/ # File storage (ignored in Git)
-
 - tests/
-
 - .env.example
-
 - .gitignore
-
 - composer.json
-
 
 ---
 
@@ -110,54 +108,71 @@ The aim of this project is to develop a **website** (with potential mobile app e
 5. **Price Comparison**  
    Users can browse and compare prices across stores to find the best deals.
 
+6. **Admin Dashboard**  
+   Admins can monitor and control the platform using the dashboard features.
+
 ---
 
 ## 🛠 Setup Instructions
 
-1.  **Clone the repository:**
+1. **Clone the repository:**
     ```bash
     git clone https://github.com/your-username/pricefinder.git
     cd pricefinder
-      
-2.  **Install PHP dependencies:**
+    ```
+2. **Install PHP dependencies:**
+    ```bash
     composer install
-
-3.  **Install Node dependencies (if required):**
+    ```
+3. **Install Node dependencies (if required):**
+    ```bash
     npm install
     npm run dev
-
-4.  **Configure environement variables:**
+    ```
+4. **Configure environment variables:**
+    ```bash
     cp .env.example .env
     php artisan key:generate
-
-5.  **Run database migrations:**
+    ```
+5. **Run database migrations:**
+    ```bash
     php artisan migrate
-
-6.  **Serve the application locally:**
+    ```
+6. **Serve the application locally:**
+    ```bash
     php artisan serve
+    ```
 
+---
 
 ## 🔐 Security Notes
 
-- .env contains sensitive configuration and is excluded from Git.
-
-- Large folders like /vendor and /node_modules are ignored and installed locally.
-
+- `.env` contains sensitive configuration and is excluded from Git.
+- Large folders like `/vendor` and `/node_modules` are ignored and installed locally.
 - Uploaded files are validated to prevent security risks.
+- Only authorized admins can access the dashboard.
+
+---
 
 ## 📈 Expected Outcomes
 
 - Fully functional web application for price comparison.
-
 - Verified prices contributed by the user community.
-
 - Users can make informed shopping decisions.
-
 - Scalable structure for future mobile app integration.
+- Admin dashboard provides centralized platform management.
+
+---
 
 ## 👨‍💻 Author
 
-**Mahmoud Saifan**
-Graduate in Computer and Communication Network Engineering – Lebanese University
-Continuing software engineering studies at CNAM
-Contact: www.linkedin/in/mahmoud-saifan | Mahmoud.Saifan@hotmail.com
+**Mahmoud Saifan**  
+Graduate in Computer and Communication Network Engineering – Lebanese University  
+Continuing software engineering studies at CNAM  
+Contact: [LinkedIn](https://www.linkedin.com/in/mahmoud-saifan) | `Mahmoud.Saifan@hotmail.com`
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
